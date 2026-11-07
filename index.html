@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>韩剧网-韩剧网在线观看_韩国电视剧推荐_2026最新韩剧资源导航</title>
+<meta name="description" content="韩剧网是专注韩国电视剧在线观看与推荐的内容导航站，汇集2026最新韩剧、经典韩剧、热播韩剧榜单、演员角色解析与追剧指南，提供韩剧网在线观看入口、韩剧推荐清单与更新动态，帮助剧迷快速找到想看的韩国电视剧。">
+<meta name="keywords" content="韩剧网,韩剧网在线观看,韩国电视剧推荐,2026最新韩剧,韩剧追剧指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e05a7a'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E韩%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+--pj-rose:#e05a7a;
+--pj-rose-d:#b83e5c;
+--pj-rose-l:#fce8ee;
+--pj-ink:#241d24;
+--pj-sub:#6c5f6a;
+--pj-line:#efe3e7;
+--pj-bg:#fffafb;
+--pj-card:#ffffff;
+--pj-gold:#c99a3f;
+--pj-shadow:0 6px 22px rgba(180,90,120,.10);
+--pj-radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+background:var(--pj-bg);color:var(--pj-ink);line-height:1.75;font-size:15px;
+-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.pj-header{
+position:sticky;top:0;z-index:60;background:rgba(255,250,251,.94);
+backdrop-filter:blur(10px);border-bottom:1px solid var(--pj-line);
+}
+.pj-nav{display:flex;align-items:center;gap:22px;height:64px}
+.pj-logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:19px;color:var(--pj-rose-d);white-space:nowrap}
+.pj-logo-mark{
+width:32px;height:32px;border-radius:9px;display:grid;place-items:center;
+background:linear-gradient(135deg,var(--pj-rose),#f19bb0);color:#fff;font-size:16px;font-weight:700;
+}
+.pj-nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--pj-sub);flex:1}
+.pj-nav-links a{padding:4px 2px;border-bottom:2px solid transparent;transition:.2s}
+.pj-nav-links a:hover{color:var(--pj-rose-d);border-bottom-color:var(--pj-rose)}
+.pj-nav-btn{
+background:var(--pj-rose);color:#fff;padding:8px 18px;border-radius:999px;
+font-size:14px;font-weight:600;white-space:nowrap;box-shadow:0 4px 14px rgba(224,90,122,.3);
+}
+.pj-nav-btn:hover{background:var(--pj-rose-d)}
+.pj-banner{
+background:linear-gradient(135deg,#fdf0f4 0%,#fbe3ea 45%,#f9f6f2 100%);
+border-bottom:1px solid var(--pj-line);padding:46px 0 40px;position:relative;overflow:hidden;
+}
+.pj-banner::after{
+content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;
+background:radial-gradient(circle,rgba(224,90,122,.16),transparent 70%);
+}
+.pj-banner-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;position:relative;z-index:2}
+.pj-banner h1{font-size:34px;line-height:1.3;font-weight:800;letter-spacing:-.5px}
+.pj-banner h1 em{color:var(--pj-rose-d);font-style:normal}
+.pj-banner-sub{margin-top:14px;color:var(--pj-sub);font-size:15px}
+.pj-banner-sub p{margin-bottom:6px}
+.pj-search{
+margin-top:22px;display:flex;background:#fff;border-radius:999px;padding:6px;
+box-shadow:var(--pj-shadow);max-width:520px;border:1px solid var(--pj-line);
+}
+.pj-search input{
+flex:1;border:none;outline:none;background:transparent;padding:9px 16px;font-size:15px;color:var(--pj-ink);
+}
+.pj-search button{
+border:none;cursor:pointer;background:var(--pj-rose);color:#fff;padding:9px 24px;
+border-radius:999px;font-size:15px;font-weight:600;
+}
+.pj-search button:hover{background:var(--pj-rose-d)}
+.pj-quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pj-quick a{
+background:#fff;border:1px solid var(--pj-line);padding:7px 16px;border-radius:999px;
+font-size:13.5px;color:var(--pj-sub);transition:.18s;
+}
+.pj-quick a:hover{border-color:var(--pj-rose);color:var(--pj-rose-d);transform:translateY(-2px)}
+.pj-poster{
+background:linear-gradient(155deg,#3a2733,#6b3a4e 55%,#b8576f);
+border-radius:18px;padding:26px;color:#fff;box-shadow:0 14px 36px rgba(110,50,80,.28);
+min-height:250px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.pj-poster h3{font-size:18px;margin-bottom:6px}
+.pj-poster .pj-poster-tag{font-size:12.5px;color:#f6c9d6;margin-bottom:14px}
+.pj-poster-list{font-size:13.5px;line-height:2;color:#f4e2e8}
+.pj-poster-list span{color:#ffd9a0;font-weight:600}
+.pj-poster-foot{font-size:12.5px;color:#e5bfcd;margin-top:16px;border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+section{padding:46px 0}
+.pj-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.pj-sec-head h2{font-size:23px;font-weight:800;position:relative;padding-left:14px}
+.pj-sec-head h2::before{
+content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:3px;
+background:linear-gradient(var(--pj-rose),#f4a7bb);
+}
+.pj-sec-head p{color:var(--pj-sub);font-size:14px}
+.pj-sec-head .pj-more{font-size:13.5px;color:var(--pj-rose-d);font-weight:600}
+.pj-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pj-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pj-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pj-card{
+background:var(--pj-card);border-radius:var(--pj-radius);border:1px solid var(--pj-line);
+padding:20px;box-shadow:var(--pj-shadow);transition:.22s;
+}
+.pj-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(180,90,120,.16);border-color:#f4cbda}
+.pj-card-cover{
+height:96px;border-radius:10px;margin-bottom:14px;display:flex;align-items:flex-end;
+padding:12px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.5px;
+}
+.pj-c1{background:linear-gradient(135deg,#e05a7a,#f0a3b8)}
+.pj-c2{background:linear-gradient(135deg,#5d6ec7,#9aa8e8)}
+.pj-c3{background:linear-gradient(135deg,#c99a3f,#e8c987)}
+.pj-c4{background:linear-gradient(135deg,#4a9d8e,#8bd0c3)}
+.pj-c5{background:linear-gradient(135deg,#8c5bb5,#c39ce0)}
+.pj-c6{background:linear-gradient(135deg,#d2703a,#f0ab7c)}
+.pj-c7{background:linear-gradient(135deg,#3c6e8f,#7fb3cd)}
+.pj-c8{background:linear-gradient(135deg,#a9485f,#e08698)}
+.pj-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.pj-tags span{
+font-size:12px;background:var(--pj-rose-l);color:var(--pj-rose-d);
+padding:3px 9px;border-radius:6px;
+}
+.pj-card h3{font-size:16.5px;margin-bottom:6px;line-height:1.4}
+.pj-card .pj-desc{font-size:13.5px;color:var(--pj-sub);line-height:1.7}
+.pj-meta{display:flex;gap:14px;margin-top:12px;font-size:12.5px;color:#9a8a95;flex-wrap:wrap}
+.pj-meta b{color:var(--pj-rose-d);font-weight:600}
+.pj-list{display:flex;flex-direction:column;gap:0}
+.pj-list-item{
+display:flex;gap:16px;align-items:flex-start;padding:16px 4px;border-bottom:1px dashed var(--pj-line);
+}
+.pj-list-item:last-child{border-bottom:none}
+.pj-list-num{
+width:30px;height:30px;flex:0 0 30px;border-radius:8px;display:grid;place-items:center;
+background:var(--pj-rose-l);color:var(--pj-rose-d);font-weight:800;font-size:14px;
+}
+.pj-list-num.top{background:linear-gradient(135deg,var(--pj-rose),#f19bb0);color:#fff}
+.pj-list-body h3{font-size:15.5px;margin-bottom:4px}
+.pj-list-body p{font-size:13.5px;color:var(--pj-sub);line-height:1.7}
+.pj-list-time{font-size:12.5px;color:#a996a1;white-space:nowrap;margin-left:auto;padding-top:2px}
+.pj-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pj-cat{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:18px 16px;
+transition:.2s;display:block;
+}
+.pj-cat:hover{border-color:var(--pj-rose);background:var(--pj-rose-l);transform:translateY(-3px)}
+.pj-cat b{display:block;font-size:15.5px;margin-bottom:5px;color:var(--pj-ink)}
+.pj-cat span{font-size:12.5px;color:var(--pj-sub)}
+.pj-article{
+background:#fff;border:1px solid var(--pj-line);border-radius:var(--pj-radius);
+padding:34px;box-shadow:var(--pj-shadow);
+}
+.pj-article h3{font-size:18px;margin:26px 0 12px;color:var(--pj-rose-d)}
+.pj-article h3:first-child{margin-top:0}
+.pj-article p{margin-bottom:14px;color:#3d3340;font-size:15px;line-height:1.95;text-align:justify}
+.pj-article strong{color:var(--pj-rose-d)}
+.pj-quote{
+border-left:4px solid var(--pj-rose);background:var(--pj-rose-l);
+padding:14px 18px;border-radius:0 10px 10px 0;font-size:14px;color:#5c4550;margin:18px 0;
+}
+.pj-guide{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pj-guide-item{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:18px 20px;
+}
+.pj-guide-item b{display:flex;align-items:center;gap:8px;font-size:15.5px;margin-bottom:8px}
+.pj-guide-item b i{
+width:22px;height:22px;border-radius:6px;background:var(--pj-rose-l);color:var(--pj-rose-d);
+display:grid;place-items:center;font-size:12px;font-style:normal;font-weight:800;
+}
+.pj-guide-item p{font-size:13.5px;color:var(--pj-sub);line-height:1.8}
+.pj-faq{display:flex;flex-direction:column;gap:12px}
+.pj-faq details{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:0 20px;
+}
+.pj-faq summary{
+cursor:pointer;padding:16px 0;font-weight:700;font-size:15.5px;list-style:none;
+position:relative;padding-right:28px;
+}
+.pj-faq summary::-webkit-details-marker{display:none}
+.pj-faq summary::after{
+content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+font-size:20px;color:var(--pj-rose);font-weight:400;
+}
+.pj-faq details[open] summary::after{content:"−"}
+.pj-faq .pj-faq-a{padding:0 0 18px;font-size:14px;color:var(--pj-sub);line-height:1.85;border-top:1px dashed var(--pj-line);padding-top:14px}
+.pj-comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.pj-comment{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:16px 18px;
+}
+.pj-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.pj-avatar{
+width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+color:#fff;font-size:13px;font-weight:700;flex:0 0 32px;
+}
+.pj-comment-head b{font-size:13.5px}
+.pj-comment-head time{font-size:12px;color:#a996a1;margin-left:auto}
+.pj-comment p{font-size:13.5px;color:#4b3f48;line-height:1.75}
+.pj-news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pj-news-card{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:18px;transition:.2s;
+}
+.pj-news-card:hover{transform:translateY(-4px);box-shadow:var(--pj-shadow)}
+.pj-news-card time{font-size:12.5px;color:var(--pj-rose-d);font-weight:600}
+.pj-news-card h3{font-size:15px;margin:8px 0 6px;line-height:1.5}
+.pj-news-card p{font-size:13px;color:var(--pj-sub);line-height:1.7}
+.pj-subscribe{
+background:linear-gradient(135deg,#31212b,#6b3a4e);border-radius:18px;padding:36px;
+color:#fff;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+}
+.pj-subscribe h2{font-size:22px;margin-bottom:8px}
+.pj-subscribe p{font-size:14px;color:#e5c8d2}
+.pj-sub-form{display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:5px;min-width:320px}
+.pj-sub-form input{
+flex:1;border:none;outline:none;background:transparent;color:#fff;padding:9px 16px;font-size:14px;
+}
+.pj-sub-form input::placeholder{color:#d9b8c4}
+.pj-sub-form button{
+border:none;background:#fff;color:var(--pj-rose-d);font-weight:700;padding:9px 22px;
+border-radius:999px;cursor:pointer;font-size:14px;
+}
+.pj-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pj-stat{
+background:#fff;border:1px solid var(--pj-line);border-radius:12px;padding:18px;text-align:center;
+}
+.pj-stat b{display:block;font-size:24px;color:var(--pj-rose-d);font-weight:800}
+.pj-stat span{font-size:13px;color:var(--pj-sub)}
+.pj-footer{background:#2b1e26;color:#d6bfc9;padding:44px 0 26px;margin-top:20px}
+.pj-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px}
+.pj-footer h4{color:#fff;font-size:15px;margin-bottom:14px}
+.pj-footer p,.pj-footer a{font-size:13.5px;line-height:2;color:#c9b0bb}
+.pj-footer a:hover{color:#fff}
+.pj-footer-links{display:flex;flex-direction:column;gap:2px}
+.pj-footer-bottom{
+border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;
+font-size:12.5px;color:#a8929d;text-align:center;line-height:1.9;
+}
+@media(max-width:900px){
+.pj-banner-grid{grid-template-columns:1fr}
+.pj-grid-3,.pj-grid-4,.pj-news,.pj-grid-2{grid-template-columns:repeat(2,1fr)}
+.pj-cats{grid-template-columns:repeat(2,1fr)}
+.pj-footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+.pj-nav-links{display:none}
+.pj-banner h1{font-size:26px}
+.pj-grid-3,.pj-grid-4,.pj-news,.pj-grid-2,.pj-guide,.pj-comments{grid-template-columns:1fr}
+.pj-stats{grid-template-columns:repeat(2,1fr)}
+.pj-article{padding:22px}
+.pj-sub-form{min-width:auto;width:100%}
+.pj-footer-grid{grid-template-columns:1fr}
+.pj-list-time{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="pj-header" id="top">
+<div class="wrap pj-nav">
+<a class="pj-logo" href="/#top"><span class="pj-logo-mark">韩</span>韩剧网</a>
+<nav class="pj-nav-links">
+<a href="/#hot">热播推荐</a>
+<a href="/#new">最新更新</a>
+<a href="/#cat">分类导航</a>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">追剧指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#news">剧集资讯</a>
+<a href="/#comment">剧迷评论</a>
+</nav>
+<a class="pj-nav-btn" href="/#new">今日更新</a>
+</div>
+</header>
+
+<section class="pj-banner">
+<div class="wrap pj-banner-grid">
+<div>
+<h1>韩剧网 · <em>韩国电视剧在线观看与追剧推荐导航</em></h1>
+<div class="pj-banner-sub">
+<p>从2026最新韩剧到口碑经典老剧，韩剧网把热播榜、剧集资料、演员角色解析和更新动态整理在一起。</p>
+<p>想找一部下饭剧、一部悬疑剧，或者想跟进本周更新，都可以从这里开始慢慢翻。</p>
+</div>
+<form class="pj-search" onsubmit="return false">
+<input type="text" placeholder="搜索剧名、演员、题材，如：悬疑 / 财阀 / 医生">
+<button type="button">搜剧</button>
+</form>
+<div class="pj-quick">
+<a href="/#hot">热播榜</a>
+<a href="/#new">最新更新</a>
+<a href="/#cat">爱情甜剧</a>
+<a href="/#cat">悬疑犯罪</a>
+<a href="/#cat">古装史剧</a>
+<a href="/#cat">职场医疗</a>
+<a href="/#deep">题材解析</a>
+<a href="/#guide">新手追剧</a>
+<a href="/#news">剧集资讯</a>
+</div>
+</div>
+<div class="pj-poster">
+<div>
+<h3>本周韩剧网关注焦点</h3>
+<div class="pj-poster-tag">2026年11月第1周 · 编辑整理</div>
+<div class="pj-poster-list">
+· 悬疑线：<span>《雾中证词》</span> 第8集反转<br>
+· 甜宠线：<span>《便利店恋爱学》</span> 收官周<br>
+· 古装线：<span>《月下书阁》</span> 新剧上线<br>
+· 医疗线：<span>《心跳频率》</span> 口碑走高
+</div>
+</div>
+<div class="pj-poster-foot">韩剧网每日整理更新与榜单，方便按题材、按演员、按更新时间找剧。</div>
+</div>
+</div>
+</section>
+
+<section id="intro">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网是做什么的</h2>
+<p>先把内容需求说清楚，再决定从哪一部开始看</p>
+</div>
+<div class="pj-article">
+<p><strong>韩剧网</strong>这类站点的核心价值，并不是把剧名堆在一起，而是帮观众快速完成一次“看什么”的决策。打开一个韩剧网页面，用户通常带着几种很具体的目的：想找一部正在更新的热播韩剧、想确认某部剧的题材和主演、想知道某一集的更新时间、想看看同类剧的口碑再决定要不要入坑。这个页面就是围绕这些真实需求来组织的。</p>
+<p>对韩剧观众来说，韩国电视剧的消费节奏和国产剧、美剧都不太一样。韩剧普遍采用边拍边播的模式，一部剧通常16集左右，每周更新两集，追更周期大约两个月。这意味着韩剧网上的“最新更新”信息比单纯的剧集列表更重要，因为错过一周就可能被剧情讨论剧透。所以本页把<strong>最新更新</strong>和<strong>热播推荐</strong>放在靠前的位置，方便有明确追更目标的用户直接查看。</p>
+<p>另一方面，韩剧的题材分类非常细：浪漫爱情、财阀家族、悬疑犯罪、医疗职场、古装史剧、校园青春、复仇爽剧、奇幻穿越，每一类的观众重叠度不高。有人只爱看甜剧放松，有人只追悬疑反转。因此韩剧网在分类导航上做了更细的切分，并在深度解析里说明不同题材的观看门槛和爽点所在，帮助新观众少走弯路。</p>
+<p>本页还提供了演员与角色的分析、相似剧推荐、FAQ 常见问题和剧迷评论。这些内容不是装饰，而是真实追剧过程中会产生的疑问：这部剧的导演之前拍过什么？男女主有没有二搭？这部剧适合和家人一起看吗？更新到第几集了？把这些零散问题集中回答，是一个韩剧网内容页应有的样子。</p>
+<div class="pj-quote">适合收藏本页的人群：正在追更的韩剧老观众、刚接触韩剧想找入门剧的新人、按题材挑剧的观众、以及需要快速确认剧集信息的剧迷。</div>
+</div>
+</div>
+</section>
+
+<section id="hot">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网热播推荐</h2>
+<p>近期讨论度较高的韩国电视剧，按题材分组整理</p>
+<a class="pj-more" href="/#new">查看最新更新 →</a>
+</div>
+<div class="pj-grid-3">
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c1">雾中证词</div>
+<div class="pj-tags"><span>悬疑犯罪</span><span>双男主</span><span>反转</span></div>
+<h3>雾中证词</h3>
+<p class="pj-desc">一桩旧案重启，检察官与现场唯一目击者互相试探。前八集节奏偏慢，第八集开始线索集中回收，适合喜欢推理的观众。</p>
+<div class="pj-meta"><span>更新至 <b>第8集</b></span><span>评分 <b>8.6</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c2">便利店恋爱学</div>
+<div class="pj-tags"><span>浪漫爱情</span><span>轻喜剧</span><span>夜班</span></div>
+<h3>便利店恋爱学</h3>
+<p class="pj-desc">夜班店员和常客之间的慢热故事，台词生活化，没有大起大落的狗血桥段，适合当睡前下饭剧。</p>
+<div class="pj-meta"><span>更新至 <b>第14集</b></span><span>评分 <b>8.2</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c3">月下书阁</div>
+<div class="pj-tags"><span>古装史剧</span><span>权谋</span><span>文人</span></div>
+<h3>月下书阁</h3>
+<p class="pj-desc">以朝鲜时代书阁为背景的权谋剧，服化道考究，台词偏文言。前三集信息量大，建议连着看。</p>
+<div class="pj-meta"><span>更新至 <b>第4集</b></span><span>评分 <b>8.8</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c4">心跳频率</div>
+<div class="pj-tags"><span>医疗职场</span><span>群像</span><span>成长</span></div>
+<h3>心跳频率</h3>
+<p class="pj-desc">急诊科新人医生的成长线，病例单元剧结构，每集一个独立故事，穿插科室内部的人际关系。</p>
+<div class="pj-meta"><span>更新至 <b>第10集</b></span><span>评分 <b>8.4</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c5">财阀家的第八个孩子</div>
+<div class="pj-tags"><span>家族复仇</span><span>爽剧</span><span>豪门</span></div>
+<h3>财阀家的第八个孩子</h3>
+<p class="pj-desc">被排除在继承序列之外的私生子回国夺权，典型的韩式复仇爽剧，节奏快、冲突密集，适合想看解压剧的观众。</p>
+<div class="pj-meta"><span>更新至 <b>第12集</b></span><span>评分 <b>7.9</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c6">那年夏天的公交车</div>
+<div class="pj-tags"><span>青春怀旧</span><span>双时间线</span><span>治愈</span></div>
+<h3>那年夏天的公交车</h3>
+<p class="pj-desc">成年女主回到故乡处理旧屋，闪回1998年的夏天。节奏舒缓，情绪细腻，适合喜欢慢节奏治愈剧的观众。</p>
+<div class="pj-meta"><span>全 <b>16集</b> 完结</span><span>评分 <b>8.9</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c7">信号之外</div>
+<div class="pj-tags"><span>科幻悬疑</span><span>时间线</span><span>烧脑</span></div>
+<h3>信号之外</h3>
+<p class="pj-desc">无线电爱好者接收到来自未来的广播，试图阻止一场事故。设定新颖，但中段解释较多，需要一点耐心。</p>
+<div class="pj-meta"><span>更新至 <b>第6集</b></span><span>评分 <b>8.1</b></span></div>
+</div>
+
+<div class="pj-card">
+<div class="pj-card-cover pj-c8">主妇的第二次求职</div>
+<div class="pj-tags"><span>女性成长</span><span>职场</span><span>现实向</span></div>
+<h3>主妇的第二次求职</h3>
+<p class="pj-desc">全职主妇重返职场的现实题材，细节真实，对中年女性处境的描写引发不少讨论，节奏偏写实。</p>
+<div class="pj-meta"><span>更新至 <b>第9集</b></span><span>评分 <b>8.5</b></span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="new" style="background:#fff;border-top:1px solid var(--pj-line);border-bottom:1px solid var(--pj-line)">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网最新更新动态</h2>
+<p>2026年11月7日整理 · 按更新时间排列</p>
+</div>
+<div class="pj-list">
+
+<div class="pj-list-item">
+<div class="pj-list-num top">1</div>
+<div class="pj-list-body">
+<h3>《雾中证词》第8集上线</h3>
+<p>本集集中回收前七集埋下的三条线索，目击者身份出现关键转折，剧迷讨论区热度明显上升。</p>
+</div>
+<span class="pj-list-time">11-07 10:20</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num top">2</div>
+<div class="pj-list-body">
+<h3>《便利店恋爱学》第14集更新</h3>
+<p>临近收官，男女主关系进入确认阶段，本周将播出最后两集，适合想一口气补完的观众。</p>
+</div>
+<span class="pj-list-time">11-07 09:45</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">3</div>
+<div class="pj-list-body">
+<h3>《月下书阁》新剧上线第4集</h3>
+<p>古装权谋线逐渐展开，本集引入新的朝堂势力，人物关系图需要重新梳理。</p>
+</div>
+<span class="pj-list-time">11-06 22:10</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">4</div>
+<div class="pj-list-body">
+<h3>《心跳频率》第10集更新</h3>
+<p>急诊科迎来大规模事故伤员，群像戏份分配更均衡，新人医生的成长线开始清晰。</p>
+</div>
+<span class="pj-list-time">11-06 21:30</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">5</div>
+<div class="pj-list-body">
+<h3>《财阀家的第八个孩子》第12集</h3>
+<p>继承权争夺进入白热化，本集有一场较长的家族会议戏，台词密度高。</p>
+</div>
+<span class="pj-list-time">11-06 20:05</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">6</div>
+<div class="pj-list-body">
+<h3>《信号之外》第6集更新</h3>
+<p>时间线设定进一步复杂化，本集结尾抛出新的悬念，弹幕讨论集中在逻辑是否自洽。</p>
+</div>
+<span class="pj-list-time">11-05 23:40</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">7</div>
+<div class="pj-list-body">
+<h3>《主妇的第二次求职》第9集</h3>
+<p>主角面试受挫后重新调整方向，本集对职场年龄歧视的描写引发不少观众共鸣。</p>
+</div>
+<span class="pj-list-time">11-05 21:15</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">8</div>
+<div class="pj-list-body">
+<h3>《那年夏天的公交车》全集完结</h3>
+<p>16集全部上线，结局收束温和，适合已经攒剧的观众一次性补完。</p>
+</div>
+<span class="pj-list-time">11-04 19:00</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">9</div>
+<div class="pj-list-body">
+<h3>新剧《海边的第七封信》定档</h3>
+<p>官方公布将于11月中旬首播，题材为治愈系爱情，主演阵容已公开，可先加入待看清单。</p>
+</div>
+<span class="pj-list-time">11-03 16:25</span>
+</div>
+
+<div class="pj-list-item">
+<div class="pj-list-num">10</div>
+<div class="pj-list-body">
+<h3>《雾中证词》加更消息</h3>
+<p>因讨论热度较高，平台宣布本周追加一集，具体时间以官方公告为准。</p>
+</div>
+<span class="pj-list-time">11-03 11:00</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="cat">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网分类导航</h2>
+<p>按题材、按观看场景、按受众快速筛选</p>
+</div>
+<div class="pj-cats">
+<a class="pj-cat" href="/#hot"><b>浪漫爱情</b><span>甜宠、慢热、治愈系</span></a>
+<a class="pj-cat" href="/#hot"><b>悬疑犯罪</b><span>推理、反转、案件线</span></a>
+<a class="pj-cat" href="/#hot"><b>古装史剧</b><span>权谋、宫廷、文人线</span></a>
+<a class="pj-cat" href="/#hot"><b>医疗职场</b><span>群像、成长、单元剧</span></a>
+<a class="pj-cat" href="/#hot"><b>家族复仇</b><span>豪门、爽剧、快节奏</span></a>
+<a class="pj-cat" href="/#hot"><b>青春怀旧</b><span>双时间线、校园、成长</span></a>
+<a class="pj-cat" href="/#hot"><b>科幻奇幻</b><span>时间线、设定流、烧脑</span></a>
+<a class="pj-cat" href="/#hot"><b>现实题材</b><span>女性成长、社会议题</span></a>
+</div>
+</div>
+</section>
+
+<section id="deep" style="background:#fff;border-top:1px solid var(--pj-line);border-bottom:1px solid var(--pj-line)">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网深度解析：韩国电视剧到底好看在哪</h2>
+<p>从题材、节奏、表演到消费习惯，逐层拆开来看</p>
+</div>
+<div class="pj-article">
+<h3>一、题材细分是韩剧最鲜明的特征</h3>
+<p>如果只看“韩国电视剧”这五个字，很难判断一部剧适不适合自己。韩剧的真正特点在于题材分得非常细，而且每种题材都有相对固定的叙事套路和观众预期。浪漫爱情剧通常强调情绪铺垫和细节互动，节奏偏慢，靠男女主之间的化学反应撑起观感；悬疑犯罪剧则相反，前两集必须抛出足够强的钩子，中段靠线索推进，结局需要完成合理回收。<strong>韩剧网</strong>在整理剧集时，会优先标注题材归属，就是因为这个信息直接决定了观众要不要点开。</p>
+<p>以家族复仇类为例，这类剧的爽点来自权力关系的反转，节奏必须快，冲突要密集，人物动机可以简化但不能断裂。而古装史剧的观看门槛明显更高，台词、称谓、官职体系都需要一点背景知识，前三集往往是信息量最大的阶段。把这两类剧放在同一个列表里而不加区分，对观众来说其实是负担。</p>
+
+<h3>二、边拍边播带来的更新节奏感</h3>
+<p>韩国电视剧普遍采用边拍边播的制作方式，一部剧通常16集，每周更新两集，整个播出周期大约两个月。这种模式带来两个直接后果：一是剧本会根据观众反馈做微调，二是<strong>最新更新</strong>的时间点变得非常重要。对观众而言，追更和攒剧是两种完全不同的消费体验。追更的乐趣在于讨论，每周两集之间有时间消化和猜测；攒剧的优势在于节奏连贯，不会被等待打断。</p>
+<p>所以一个实用的韩剧网页面，需要同时服务这两类人：既要有清晰的更新日历，也要有完整的剧集信息，让攒剧的观众能一次性判断这部剧是否值得花时间。本页的更新动态模块就是按时间倒序排列的，方便快速定位最近几天上线的剧集。</p>
+
+<h3>三、表演与镜头语言的实际差异</h3>
+<p>韩国电视剧在表演上有一套相对成熟的体系，情绪表达偏外放，特写镜头使用频率高，重要情绪节点往往会给到较长时间的面部特写。这种处理方式对演员的要求很高，一旦表演不到位就会显得刻意。反过来，优秀的表演能把原本平淡的台词演出层次感，这也是很多观众说“韩剧靠演员撑起来”的原因。</p>
+<p>镜头语言方面，现代韩剧的摄影水准整体较高，尤其是都市题材，对光线和色彩的控制比较讲究。悬疑剧偏爱冷色调和低照度场景，爱情剧则多用暖光和浅景深。这些视觉差异在<strong>韩剧网</strong>的剧集介绍里不一定全部展开，但观众实际观看时感受非常明显，也是口碑分化的重要原因。</p>
+
+<h3>四、读者搜索“韩剧网”通常想了解什么</h3>
+<p>从搜索意图来看，用户输入<strong>韩剧网</strong>时，大多数不是想读一篇长文，而是想快速完成一次查找。常见意图包括：找某部剧的观看入口、确认更新到第几集、按题材找同类剧、了解演员还演过什么、判断一部剧适不适合自己。因此内容站的价值在于把信息组织得足够清楚，而不是堆砌形容词。</p>
+<p>本页在结构上做了取舍：热播推荐和最新更新放在最前面，深度解析和 FAQ 放在中后段，评论和资讯放在末尾。这样既照顾了目标明确的用户，也给想慢慢浏览的观众留了空间。对于刚开始接触韩剧的观众，建议先从<strong>追剧指南</strong>和 FAQ 看起，再回到推荐列表挑剧，效率会更高。</p>
+<div class="pj-quote">一句话总结：韩剧网的实用价值，在于把“看什么”和“什么时候看”这两个问题回答清楚，而不是把剧名列得越多越好。</div>
+</div>
+</div>
+</section>
+
+<section id="guide">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网追剧体验指南</h2>
+<p>页面怎么用更省时间，追更怎么安排更舒服</p>
+</div>
+<div class="pj-guide">
+<div class="pj-guide-item">
+<b><i>1</i>按题材筛选再看榜单</b>
+<p>先确定自己今天想看甜剧还是悬疑剧，再去看对应的推荐列表，比从总榜往下翻效率高很多。</p>
+</div>
+<div class="pj-guide-item">
+<b><i>2</i>更新动态优先看时间</b>
+<p>最新更新模块按时间倒序排列，追更的观众每天刷一次就能掌握进度，不必逐部点开确认。</p>
+</div>
+<div class="pj-guide-item">
+<b><i>3</i>攒剧党看总集数</b>
+<p>卡片上标注了更新至第几集或是否完结，攒剧的观众可以直接跳过还在更新的剧，避免等待。</p>
+</div>
+<div class="pj-guide-item">
+<b><i>4</i>深度解析判断门槛</b>
+<p>古装史剧、科幻悬疑这类剧有观看门槛，先读深度解析里的题材说明，能减少弃剧概率。</p>
+</div>
+<div class="pj-guide-item">
+<b><i>5</i>评论区看真实反馈</b>
+<p>剧迷评论里既有推荐也有吐槽，比单一评分更能反映实际观感，尤其是中段节奏问题。</p>
+</div>
+<div class="pj-guide-item">
+<b><i>6</i>移动端适合碎片浏览</b>
+<p>页面做了响应式适配，手机上浏览卡片和更新列表体验完整，通勤时刷一刷很方便。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="stats" style="background:#fff;border-top:1px solid var(--pj-line);border-bottom:1px solid var(--pj-line)">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网内容概览</h2>
+<p>页面收录范围示意</p>
+</div>
+<div class="pj-stats">
+<div class="pj-stat"><b>8</b><span>题材分类</span></div>
+<div class="pj-stat"><b>120+</b><span>剧集条目</span></div>
+<div class="pj-stat"><b>每日</b><span>更新整理</span></div>
+<div class="pj-stat"><b>16集</b><span>常见剧集长度</span></div>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网常见问题</h2>
+<p>追剧过程中最常被问到的几个问题</p>
+</div>
+<div class="pj-faq">
+
+<details open>
+<summary>韩剧网适合什么样的观众使用？</summary>
+<div class="pj-faq-a">主要适合三类人：一是正在追更的韩剧观众，需要确认更新进度；二是想按题材找剧的观众，比如只想看悬疑或只想看甜剧；三是刚接触韩剧的新人，需要先了解有哪些类型和代表作。页面的推荐列表和深度解析分别对应后两类需求。</div>
+</details>
+
+<details>
+<summary>2026年最新韩剧一般什么时候更新？</summary>
+<div class="pj-faq-a">韩国电视剧多数采用周播模式，常见的是每周两集，分别安排在周中和周末。具体时间以各剧官方公告为准。本页的最新更新模块按时间倒序记录，追更时每天查看一次即可掌握整体进度，不需要逐部确认。</div>
+</details>
+
+<details>
+<summary>古装史剧看起来门槛很高，新人有推荐顺序吗？</summary>
+<div class="pj-faq-a">建议不要直接从台词密度最高的权谋剧入手。可以先看以人物成长为主线的古装剧，熟悉基本的称谓和场景之后，再过渡到朝堂权谋类。本页在深度解析里单独说明了古装剧的观看门槛，挑选时可以参考那一部分。</div>
+</details>
+
+<details>
+<summary>追更和攒剧哪种方式更适合韩剧？</summary>
+<div class="pj-faq-a">两种都合理，取决于你的时间安排。追更的优势是能参与讨论、不被剧透，缺点是每周等待会打断情绪；攒剧的优势是节奏连贯，适合悬疑类这种需要记住大量线索的剧。悬疑剧建议攒完再看，爱情剧和单元剧追更体验更好。</div>
+</details>
+
+<details>
+<summary>怎么判断一部韩剧适不适合自己？</summary>
+<div class="pj-faq-a">先看题材标签，再看更新状态和总集数，最后看评论区的中段反馈。评分只能作为参考，因为不同题材的评分基准不一样。比如复仇爽剧的评分普遍低于文艺向作品，但它的观感未必更差，关键还是看你想获得什么样的观看体验。</div>
+</details>
+
+<details>
+<summary>韩剧网页面上的推荐会定期调整吗？</summary>
+<div class="pj-faq-a">会。热播推荐和最新更新模块会随着剧集播出进度调整，完结剧会逐步移出主推位置，新上线的剧会补充进来。分类导航和深度解析属于相对稳定的内容，变化频率较低，适合作为长期参考。</div>
+</details>
+
+</div>
+</div>
+</section>
+
+<section id="comment" style="background:#fff;border-top:1px solid var(--pj-line);border-bottom:1px solid var(--pj-line)">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网剧迷评论</h2>
+<p>近期观众留言，观点不代表本站立场</p>
+</div>
+<div class="pj-comments">
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#e05a7a">林</span><b>林间小满</b><time>11-07</time>
+</div>
+<p>《雾中证词》第八集是真的把前面的线收回来了，之前还担心是故弄玄虚，现在看编剧是有规划的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#5d6ec7">周</span><b>周一不加班</b><time>11-07</time>
+</div>
+<p>便利店恋爱学快完结了，节奏一直很稳，就是中间有两集有点水，整体还是能当睡前剧看的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#c99a3f">陈</span><b>陈年旧胶片</b><time>11-06</time>
+</div>
+<p>月下书阁的服化道确实用心，但前三集人物太多，我看了两遍才理清楚谁是谁的人。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#4a9d8e">苏</span><b>苏打气泡水</b><time>11-06</time>
+</div>
+<p>心跳频率的病例写得比预想中扎实，没有为了煽情硬凑，群像戏份分配也还算均衡。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#8c5bb5">顾</span><b>顾北有风</b><time>11-06</time>
+</div>
+<p>财阀家那部就是纯爽剧，别带逻辑看就行，我每周当解压看两集，挺合适的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#d2703a">许</span><b>许多多</b><time>11-05</time>
+</div>
+<p>信号之外的设定挺有意思，但第五集开始解释太多了，观众不是听不懂，是希望留点悬念。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#3c6e8f">何</span><b>何处是归途</b><time>11-05</time>
+</div>
+<p>那年夏天的公交车完结了，结局收得很温和，没有强行圆满，这点我挺喜欢的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#a9485f">程</span><b>程小舟</b><time>11-05</time>
+</div>
+<p>主妇的第二次求职第九集面试那段，看得有点闷，但确实真实，职场年龄问题就是这么直接。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#e05a7a">白</span><b>白桃乌龙</b><time>11-04</time>
+</div>
+<p>建议悬疑剧还是攒完再看，我每周追雾中证词，中间那几集差点忘了前面的线索。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#5d6ec7">韩</span><b>韩剧十年老观众</b><time>11-04</time>
+</div>
+<p>这个页面分类做得比我常去的几个站清楚，至少不会把古装和爱情混在一起推。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#c99a3f">姜</span><b>姜姜姜</b><time>11-03</time>
+</div>
+<p>等海边的第七封信，看预告是治愈系，希望别拍成苦情戏。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#4a9d8e">叶</span><b>叶落知秋</b><time>11-03</time>
+</div>
+<p>心跳频率的配乐加分不少，手术戏的紧张感很大一部分是靠音乐撑起来的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#8c5bb5">吴</span><b>吴所谓</b><time>11-02</time>
+</div>
+<p>财阀家第八集之后节奏明显快了，前面铺垫有点长，能坚持下来的观众应该都觉得值。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#d2703a">沈</span><b>沈见月</b><time>11-02</time>
+</div>
+<p>希望更新动态能再标一下每集时长，有些剧单集七十多分钟，通勤时间不够看。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#3c6e8f">郑</span><b>郑在发呆</b><time>11-01</time>
+</div>
+<p>月下书阁的台词确实有点难度，但习惯了之后反而觉得有味道，比现代剧更耐看。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#a9485f">方</span><b>方糖不甜</b><time>10-31</time>
+</div>
+<p>便利店恋爱学男女主的对手戏很自然，没有刻意撒糖，这点比很多同类剧做得好。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#e05a7a">梁</span><b>梁上君子</b><time>10-30</time>
+</div>
+<p>信号之外如果后面能少解释一点设定，口碑应该还能再涨，现在有点用力过猛。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#5d6ec7">谢</span><b>谢小满</b><time>10-29</time>
+</div>
+<p>主妇的第二次求职让我想起我妈那会儿找工作的经历，看的时候情绪挺复杂的。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#c99a3f">唐</span><b>唐不苦</b><time>10-28</time>
+</div>
+<p>希望分类里再加一个“单元剧”标签，医疗剧和刑侦剧很多都是单元结构，找起来更方便。</p>
+</div>
+
+<div class="pj-comment">
+<div class="pj-comment-head">
+<span class="pj-avatar" style="background:#4a9d8e">冯</span><b>冯虚御风</b><time>10-27</time>
+</div>
+<p>总体而言这个韩剧网页面的更新整理比较及时，比自己在各个平台来回找省事多了。</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="news">
+<div class="wrap">
+<div class="pj-sec-head">
+<h2>韩剧网相关资讯</h2>
+<p>剧集动态、定档消息与题材观察</p>
+</div>
+<div class="pj-news">
+
+<div class="pj-news-card">
+<time>2026-11-07</time>
+<h3>《雾中证词》确认加更，本周播出安排调整</h3>
+<p>平台宣布因讨论热度较高追加一集，追更观众需留意最新更新时间，避免错过剧情节点。</p>
+</div>
+
+<div class="pj-news-card">
+<time>2026-11-06</time>
+<h3>《海边的第七封信》公布主演阵容与首播档期</h3>
+<p>治愈系爱情题材，官方公布将于11月中旬首播，目前可先加入待看清单。</p>
+</div>
+
+<div class="pj-news-card">
+<time>2026-11-05</time>
+<h3>2026年冬季韩剧题材分布观察</h3>
+<p>悬疑与医疗题材占比上升，古装剧数量略有回落，爱情剧仍保持稳定输出。</p>
+</div>
+
+<div class="pj-news-card">
+<time>2026-11-04</time>
+<h3>《那年夏天的公交车》收官，双时间线叙事获好评</h3>
+<p>16集全部完结，结局处理温和，观众对1998年线的还原度评价较高。</p>
+</div>
+
+<div class="pj-news-card">
+<time>2026-11-02</time>
+<h3>复仇题材韩剧为何持续受关注</h3>
+<p>节奏快、冲突密集是主要原因，但同类作品增多后，观众对逻辑的要求也在提高。</p>
+</div>
+
+<div class="pj-news-card">
+<time>2026-10-30</time>
+<h3>多部韩剧调整播出时间，年末档期竞争加剧</h3>
+<p>受编排调整影响，部分剧集更新时间有变化，建议以官方公告为准。</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="subscribe">
+<div class="wrap">
+<div class="pj-subscribe">
+<div>
+<h2>订阅韩剧网更新提醒</h2>
+<p>留下邮箱，接收每周韩剧更新与推荐清单整理</p>
+</div>
+<form class="pj-sub-form" onsubmit="return false">
+<input type="email" placeholder="请输入邮箱地址">
+<button type="button">订阅</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="pj-footer">
+<div class="wrap">
+<div class="pj-footer-grid">
+<div>
+<h4>关于韩剧网</h4>
+<p>韩剧网是一个面向韩剧观众的内容整理与推荐页面，汇集热播韩剧、最新更新、题材分类、演员角色解析与追剧指南，帮助观众更高效地找到想看的韩国电视剧。</p>
+</div>
+<div>
+<h4>栏目导航</h4>
+<div class="pj-footer-links">
+<a href="/#hot">热播推荐</a>
+<a href="/#new">最新更新</a>
+<a href="/#cat">分类导航</a>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">追剧指南</a>
+<a href="/#faq">常见问题</a>
+</div>
+</div>
+<div>
+<h4>内容说明</h4>
+<div class="pj-footer-links">
+<a href="/#intro">页面介绍</a>
+<a href="/#comment">剧迷评论</a>
+<a href="/#news">剧集资讯</a>
+<a href="/#stats">内容概览</a>
+<a href="/#subscribe">订阅提醒</a>
+<a href="/#top">返回顶部</a>
+</div>
+</div>
+<div>
+<h4>友情链接</h4>
+<div class="pj-footer-links">
+<a href="/#top">韩剧资源导航</a>
+<a href="/#top">韩剧榜单合集</a>
+<a href="/#top">韩国影视资讯</a>
+<a href="/#top">追剧日历</a>
+<a href="/#top">剧集资料库</a>
+</div>
+</div>
+</div>
+<div class="pj-footer-bottom">
+<p>© 2026 韩剧网 · 本站为内容整理与推荐页面，剧集信息以官方公告为准。</p>
+<p>免责声明：页面中剧集名称、更新进度与评论均为内容展示用途，不提供任何影视资源存储与传播服务。</p>
+</div>
+</div>
+</footer>
+
+</body>
+                                                             </html>
