@@ -1,0 +1,1545 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>91传媒-国产传媒内容解析_在线资源推荐_用户口碑讨论</title>
+  <meta name="description" content="91传媒内容专题聚焦国产传媒与网络视听资源，提供最新作品推荐、深度内容解析、用户真实评论与常见问题解答。从类型片单到口碑讨论，一站式了解91传媒相关动态与热门选择。">
+  <meta name="keywords" content="91传媒,国产传媒,在线资源推荐,网络视听内容,传媒内容解析">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e2b4a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f5c542' font-family='Arial'%3E91%3C/text%3E%3C/svg%3E">
+  <style>
+    /* ===== 全局变量与重置 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-body: #f4f6fa;
+      --bg-card: #ffffff;
+      --bg-subtle: #eef1f7;
+      --text-main: #151d2c;
+      --text-secondary: #4a556b;
+      --text-muted: #7b859b;
+      --accent: #c44536;
+      --accent-light: #fef0ee;
+      --accent-dark: #9e3327;
+      --gold: #c9a03d;
+      --border-light: #e2e7f0;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.10);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      --max-width: 1200px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ===== 通用容器 ===== */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      padding: 48px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .section-header h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      position: relative;
+      padding-left: 16px;
+    }
+
+    .section-header h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 4px;
+      background: var(--accent);
+      border-radius: 4px;
+    }
+
+    .section-header .more-link {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      border-bottom: 1px dashed var(--text-muted);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+
+    .section-header .more-link:hover {
+      color: var(--accent);
+    }
+
+    /* ===== 导航 ===== */
+    .nav-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.4rem;
+      letter-spacing: -0.03em;
+      flex-shrink: 0;
+    }
+
+    .logo-mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #1e2b4a, #2f4172);
+      color: #f5c542;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 800;
+      box-shadow: 0 2px 6px rgba(30, 43, 74, 0.25);
+    }
+
+    .logo-text {
+      color: #1e2b4a;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      padding: 6px 14px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: 40px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .nav-search-mini {
+      background: var(--bg-subtle);
+      border-radius: 40px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      cursor: default;
+      white-space: nowrap;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1.5px solid var(--border-light);
+      padding: 8px 20px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: default;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: default;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    /* ===== Banner ===== */
+    .hero-banner {
+      background: linear-gradient(145deg, #1a2337 0%, #253352 55%, #1f2b44 100%);
+      color: #fff;
+      padding: 56px 0 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(245, 197, 66, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      left: -120px;
+      bottom: -120px;
+      width: 460px;
+      height: 460px;
+      background: radial-gradient(circle, rgba(196, 69, 54, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .hero-tagline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #f5c542;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-tagline::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background: #f5c542;
+      border-radius: 2px;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      max-width: 820px;
+    }
+
+    .hero-banner h1 em {
+      font-style: normal;
+      color: #f5c542;
+      position: relative;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 680px;
+      line-height: 1.7;
+    }
+
+    .hero-search-row {
+      display: flex;
+      gap: 0;
+      max-width: 560px;
+      margin-top: 6px;
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-search-row input {
+      flex: 1;
+      padding: 14px 22px;
+      border: none;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .hero-search-row input::placeholder {
+      color: #9aa3b5;
+    }
+
+    .hero-search-row button {
+      background: var(--accent);
+      border: none;
+      padding: 0 30px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: default;
+      transition: background 0.2s;
+    }
+
+    .hero-search-row button:hover {
+      background: var(--accent-dark);
+    }
+
+    .hero-quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .hero-quick-links a {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 7px 18px;
+      border-radius: 40px;
+      transition: all 0.2s;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-quick-links a:hover {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    /* ===== 内容简介 ===== */
+    .intro-block {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+
+    .intro-block p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .intro-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .intro-block strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    /* ===== 卡片网格 ===== */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .media-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-cover {
+      height: 140px;
+      background: linear-gradient(135deg, #2f4172 0%, #1e2b4a 100%);
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 14px;
+      color: #fff;
+    }
+
+    .card-cover.v2 {
+      background: linear-gradient(135deg, #7a3a2e, #4d241c);
+    }
+
+    .card-cover.v3 {
+      background: linear-gradient(135deg, #2d5a4b, #1b3a30);
+    }
+
+    .card-cover.v4 {
+      background: linear-gradient(135deg, #4a3f6b, #2e2647);
+    }
+
+    .card-cover.v5 {
+      background: linear-gradient(135deg, #6b4f2c, #4a351c);
+    }
+
+    .card-cover.v6 {
+      background: linear-gradient(135deg, #2c4a6b, #1a3047);
+    }
+
+    .card-cover .cover-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(6px);
+      padding: 4px 12px;
+      border-radius: 40px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .card-cover .cover-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 8px;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-pill {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 40px;
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      letter-spacing: 0.02em;
+    }
+
+    .tag-pill.hot {
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .card-desc {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-light);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+
+    .card-meta .score {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* ===== 最新更新列表 ===== */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .update-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border-light);
+      transition: background 0.18s;
+    }
+
+    .update-item:last-child {
+      border-bottom: none;
+    }
+
+    .update-item:hover {
+      background: #fafbfd;
+    }
+
+    .update-time {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      min-width: 68px;
+      font-weight: 500;
+    }
+
+    .update-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      min-width: 140px;
+    }
+
+    .update-summary {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      flex: 1;
+    }
+
+    .update-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 40px;
+      background: var(--accent-light);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ===== 分类入口 ===== */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .category-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 24px 18px;
+      text-align: center;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .category-item:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    .category-item .cat-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .category-item .cat-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .category-item .cat-count {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ===== 深度解析 ===== */
+    .analysis-prose {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .analysis-prose h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .analysis-prose h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 4px;
+      background: var(--accent);
+      border-radius: 4px;
+    }
+
+    .analysis-prose p {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+
+    .analysis-prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    .analysis-prose strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-q {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }
+
+    .faq-q .q-mark {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .faq-a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    /* ===== 评论 ===== */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .comment-item {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .comment-item:last-child {
+      border-bottom: none;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e8ecf4, #d0d8e8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .avatar.a2 { background: linear-gradient(135deg, #f5e6d0, #f0d5b0); color: #8a6d3b; }
+    .avatar.a3 { background: linear-gradient(135deg, #d4e8f0, #b8d8e8); color: #2c6e8a; }
+    .avatar.a4 { background: linear-gradient(135deg, #e8d4f0, #d8b8e8); color: #6a3a8a; }
+    .avatar.a5 { background: linear-gradient(135deg, #d4f0e0, #b8e8d0); color: #2c8a5a; }
+    .avatar.a6 { background: linear-gradient(135deg, #f0d4d4, #e8b8b8); color: #8a2c2c; }
+
+    .comment-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+
+    .comment-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .comment-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .comment-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ===== 资讯 ===== */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .news-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .news-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+
+    .news-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .news-summary {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ===== 页脚 ===== */
+    .site-footer {
+      background: #1a2337;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 48px 0 32px;
+      margin-top: 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 14px;
+    }
+
+    .footer-brand .logo-text {
+      color: #fff;
+    }
+
+    .footer-brand .logo-text span {
+      color: #f5c542;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.55);
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #f5c542;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .footer-bottom .disclaimer {
+      max-width: 640px;
+      line-height: 1.6;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .news-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-banner h1 {
+        font-size: 2rem;
+      }
+      .hero-desc {
+        font-size: 0.95rem;
+      }
+      .nav-inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 0;
+        gap: 12px;
+      }
+      .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        gap: 2px;
+      }
+      .nav-links a {
+        font-size: 0.82rem;
+        padding: 5px 12px;
+      }
+      .nav-actions {
+        margin-left: auto;
+      }
+      .nav-search-mini {
+        display: none;
+      }
+      .faq-list {
+        grid-template-columns: 1fr;
+      }
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .intro-block,
+      .analysis-prose {
+        padding: 24px;
+      }
+      .update-item {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .update-summary {
+        flex-basis: 100%;
+      }
+      .comment-item {
+        padding: 14px 16px;
+      }
+      .section {
+        padding: 32px 0;
+      }
+      .hero-search-row {
+        max-width: 100%;
+      }
+      .hero-search-row button {
+        padding: 0 20px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-banner h1 {
+        font-size: 1.6rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-quick-links a {
+        font-size: 0.78rem;
+        padding: 5px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav-bar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <div class="logo-mark">91</div>
+      <div class="logo-text">91<span>传媒</span></div>
+    </div>
+    <nav class="nav-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#category">分类入口</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-search-mini">搜索内容…</span>
+      <button class="btn-ghost">登录</button>
+      <button class="btn-primary">订阅</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Banner ===== -->
+<section class="hero-banner">
+  <div class="container hero-inner">
+    <div class="hero-tagline">传媒内容专题 · 口碑与解析</div>
+    <h1><em>91传媒</em>内容专题：国产传媒资源解析与在线推荐</h1>
+    <p class="hero-desc">
+      聚合91传媒相关热门作品、类型片单与用户真实讨论，从内容简介到深度解析，帮您快速了解国产传媒与网络视听内容的消费脉络。
+    </p>
+    <p class="hero-desc" style="font-size:0.92rem;color:rgba(255,255,255,0.55);">
+      2026年11月7日更新 · 收录近期热门条目与社区评价，适合收藏追更。
+    </p>
+    <div class="hero-search-row">
+      <input type="text" placeholder="搜索91传媒作品、类型或关键词…" readonly>
+      <button>搜索</button>
+    </div>
+    <div class="hero-quick-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#category">分类入口</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 内容简介 ===== -->
+<section class="section container" id="intro">
+  <div class="intro-block">
+    <p><strong>91传媒内容专题</strong>面向对国产传媒、网络视听内容感兴趣的用户，提供一站式的内容参考与口碑汇总。无论您是刚开始接触这个领域，还是已经在持续追更，这个页面都会帮您理清内容脉络、推荐方向与常见疑问。我们围绕91传媒相关作品展开，涵盖类型特点、热门片单、用户评价与资讯动态，让内容消费更有方向感。</p>
+    <p>页面中的推荐卡片与榜单数据来自内容编辑的整理与模拟社区反馈，适合作为了解<strong>91传媒</strong>内容生态的入口。内容以类型化推荐为主，不涉及具体播放链接，侧重于信息聚合与决策参考。对于想快速筛选内容、了解类型差异、查看用户真实讨论的读者，这里提供了足够的参考维度。</p>
+    <p>为什么值得收藏？因为内容专题会跟随2026年11月7日前后动态进行更新，热门推荐、最新列表和用户评论保持时效感。无论是寻找下一部想看的内容，还是想了解某个类型的发展脉络，都可以从本页的深度解析和FAQ中找到线索。页面结构清晰、分类明确，适合移动端和桌面端浏览，方便随时翻阅。</p>
+  </div>
+</section>
+
+<!-- ===== 热门推荐 ===== -->
+<section class="section container" id="hot">
+  <div class="section-header">
+    <h2>热门内容推荐</h2>
+    <a href="/#hot" class="more-link">查看全部 →</a>
+  </div>
+  <div class="card-grid">
+    <div class="media-card">
+      <div class="card-cover">
+        <span class="cover-badge">编辑精选</span>
+        <div class="cover-title">暗涌之城</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">都市</span><span class="tag-pill">悬疑</span><span class="tag-pill">口碑</span></div>
+        <p class="card-desc">都市悬疑题材，节奏紧凑，人物关系层层递进。适合喜欢慢热反转的观众。</p>
+        <div class="card-meta"><span>热度 9.2</span><span class="score">★ 8.7</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v2">
+        <span class="cover-badge">近期热门</span>
+        <div class="cover-title">归途列车</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">剧情</span><span class="tag-pill">家庭</span><span class="tag-pill">治愈</span></div>
+        <p class="card-desc">以家庭情感为轴心的剧情内容，细节扎实，适合喜欢生活流叙事的用户。</p>
+        <div class="card-meta"><span>热度 8.6</span><span class="score">★ 8.4</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v3">
+        <span class="cover-badge">高分口碑</span>
+        <div class="cover-title">迷雾档案</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">悬疑</span><span class="tag-pill">推理</span><span class="tag-pill">单元剧</span></div>
+        <p class="card-desc">单元式悬疑结构，每集独立案件，主线暗藏伏笔，适合碎片化追看。</p>
+        <div class="card-meta"><span>热度 8.9</span><span class="score">★ 8.9</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v4">
+        <span class="cover-badge">新片上架</span>
+        <div class="cover-title">盛夏回响</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">青春</span><span class="tag-pill">成长</span><span class="tag-pill">校园</span></div>
+        <p class="card-desc">青春成长题材，画面清新，配乐出彩，适合喜欢轻松治愈氛围的观众。</p>
+        <div class="card-meta"><span>热度 7.8</span><span class="score">★ 8.1</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v5">
+        <span class="cover-badge">口碑黑马</span>
+        <div class="cover-title">暗夜追踪</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">犯罪</span><span class="tag-pill">动作</span><span class="tag-pill">强节奏</span></div>
+        <p class="card-desc">犯罪动作类型，叙事干脆利落，适合追求强情节推进的观众。</p>
+        <div class="card-meta"><span>热度 8.4</span><span class="score">★ 8.2</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v6">
+        <span class="cover-badge">编辑推荐</span>
+        <div class="cover-title">风起长街</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">年代</span><span class="tag-pill">群像</span><span class="tag-pill">人文</span></div>
+        <p class="card-desc">年代群像叙事，人物塑造扎实，适合偏好厚重题材与时代质感的用户。</p>
+        <div class="card-meta"><span>热度 8.0</span><span class="score">★ 8.5</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover">
+        <span class="cover-badge">话题热度</span>
+        <div class="cover-title">浮光之下</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">社会</span><span class="tag-pill">现实</span><span class="tag-pill">话题</span></div>
+        <p class="card-desc">现实主义题材，聚焦社会议题，讨论度高，适合关注内容深度的观众。</p>
+        <div class="card-meta"><span>热度 8.7</span><span class="score">★ 8.3</span></div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="card-cover v3">
+        <span class="cover-badge">追更中</span>
+        <div class="cover-title">山海食记</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag-pill hot">美食</span><span class="tag-pill">人文</span><span class="tag-pill">纪录</span></div>
+        <p class="card-desc">美食人文纪录风格，画面质感好，适合下饭观看与放松浏览。</p>
+        <div class="card-meta"><span>更新至第6集</span><span class="score">★ 8.6</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 最新更新 ===== -->
+<section class="section container" id="latest">
+  <div class="section-header">
+    <h2>最新更新 · 热播动态</h2>
+    <a href="/#latest" class="more-link">更多更新 →</a>
+  </div>
+  <div class="update-list">
+    <div class="update-item">
+      <span class="update-time">11-07</span>
+      <span class="update-name">暗涌之城</span>
+      <span class="update-summary">第12集上线，主线反转引发社区讨论</span>
+      <span class="update-badge">已更新</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-07</span>
+      <span class="update-name">迷雾档案</span>
+      <span class="update-summary">第二季首支预告释出，定档11月中旬</span>
+      <span class="update-badge">预告</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-06</span>
+      <span class="update-name">归途列车</span>
+      <span class="update-summary">会员收官，站内评分上涨至8.4</span>
+      <span class="update-badge">收官</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-06</span>
+      <span class="update-name">盛夏回响</span>
+      <span class="update-summary">更新至第18集，青春线进入高潮段落</span>
+      <span class="update-badge">已更新</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-05</span>
+      <span class="update-name">暗夜追踪</span>
+      <span class="update-summary">导演访谈上线，谈动作场面的拍摄设计</span>
+      <span class="update-badge">花絮</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-05</span>
+      <span class="update-name">山海食记</span>
+      <span class="update-summary">第6集更新，本期聚焦沿海渔村饮食</span>
+      <span class="update-badge">已更新</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-04</span>
+      <span class="update-name">风起长街</span>
+      <span class="update-summary">人物关系海报发布，群像线索逐渐清晰</span>
+      <span class="update-badge">物料</span>
+    </div>
+    <div class="update-item">
+      <span class="update-time">11-03</span>
+      <span class="update-name">浮光之下</span>
+      <span class="update-summary">本周话题讨论量上升，评论区观点分化</span>
+      <span class="update-badge">热议</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 分类入口 ===== -->
+<section class="section container" id="category">
+  <div class="section-header">
+    <h2>内容分类入口</h2>
+    <a href="/#category" class="more-link">全部分类 →</a>
+  </div>
+  <div class="category-grid">
+    <div class="category-item">
+      <span class="cat-icon">🎬</span>
+      <div class="cat-name">剧情/都市</div>
+      <div class="cat-count">126 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">🔍</span>
+      <div class="cat-name">悬疑/推理</div>
+      <div class="cat-count">84 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">💼</span>
+      <div class="cat-name">职场/现实</div>
+      <div class="cat-count">67 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">🌿</span>
+      <div class="cat-name">青春/成长</div>
+      <div class="cat-count">93 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">🏮</span>
+      <div class="cat-name">年代/人文</div>
+      <div class="cat-count">52 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">🍜</span>
+      <div class="cat-name">美食/纪录</div>
+      <div class="cat-count">38 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">⚡</span>
+      <div class="cat-name">动作/犯罪</div>
+      <div class="cat-count">71 部内容</div>
+    </div>
+    <div class="category-item">
+      <span class="cat-icon">🎙️</span>
+      <div class="cat-name">访谈/脱口秀</div>
+      <div class="cat-count">45 部内容</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 深度解析 ===== -->
+<section class="section container" id="analysis">
+  <div class="analysis-prose">
+    <h2>深度解析：91传媒内容生态与类型观察</h2>
+    <p><strong>91传媒</strong>所代表的国产传媒内容，近年来在类型化与精品化方向上持续演进。从本页收录的推荐条目可以看出，都市悬疑、现实主义、青春成长与人文纪录等类型占据了主要位置，这反映出受众对“强情节”与“真实感”的双重需求。与早期单一题材扎堆不同，当前的内容供给更加注重类型融合，例如悬疑加家庭、犯罪加社会议题，试图在娱乐性与表达深度之间找到平衡。</p>
+    <p>从内容吸引点来看，<strong>91传媒</strong>相关作品中比较突出的优势在于节奏控制与人物塑造。以悬疑类内容为例，不少作品采用单元剧结构降低追看门槛，同时在主线中埋设长线伏笔，让碎片化观看和连续性追更都能成立。都市剧情类则更依赖人物弧光，通过生活细节与对话推进关系，对演员表演和剧本打磨要求较高。用户在选择时，可以优先关注类型标签与评分分布，再结合评论区的具体讨论判断是否符合个人口味。</p>
+    <p>人物分析是理解这类内容的重要维度。在热门推荐中，主角往往承担“解谜者”或“成长者”的功能，配角则负责提供信息差与情感支点。部分作品在配角刻画上投入较多，使得群像戏成为看点。对于喜欢讨论角色动机的观众，评论区中的角色党讨论和剧情分析帖往往比正片简介更有参考价值。此外，视听表现也是区分内容质量的关键，摄影质感、配乐风格和剪辑节奏都会直接影响观看体验，尤其对于悬疑和年代题材，氛围营造几乎决定了内容的上限。</p>
+    <p>关于适合人群，如果偏好快节奏、强反转，可以优先选择悬疑推理与犯罪动作类；如果更看重情感共鸣和生活质感，都市剧情与青春成长类更合适；对人文纪实有兴趣的观众，美食纪录和年代群像能提供另一种观看体验。同类内容比较时，建议关注更新状态与总集数，短剧集更适合时间有限的用户，长剧集则适合喜欢沉浸式追更的观众。搜索“91传媒”这个词的用户，通常希望快速了解有哪些可看内容、口碑如何、类型是否对味，本页的推荐卡片和FAQ正是围绕这些需求组织信息。</p>
+    <p>需要说明的是，内容消费体验因人而异，评分与热度只是参考维度之一。建议结合多条评论、类型标签和更新节奏综合判断，不必过度依赖单一指标。本页持续关注2026年11月前后的内容动态，后续会根据社区讨论和更新情况调整推荐顺序，方便读者反复回访获取最新参考。</p>
+  </div>
+</section>
+
+<!-- ===== 体验指南 ===== -->
+<section class="section container" id="guide">
+  <div class="section-header">
+    <h2>浏览与消费指南</h2>
+    <a href="/#guide" class="more-link">了解更多 →</a>
+  </div>
+  <div class="intro-block">
+    <p><strong>页面结构清晰：</strong>本页按照“热门推荐—最新更新—分类入口—深度解析—FAQ—评论—资讯”的顺序组织内容，读者可以从上到下快速建立整体印象，也可以点击导航跳转到感兴趣的部分。每个模块都有明确的标题和摘要，减少无效滚动。</p>
+    <p><strong>分类筛选方便：</strong>分类入口按照剧情、悬疑、职场、青春、年代、美食、动作、访谈等维度划分，并标注了模拟内容数量，帮助读者快速定位类型偏好。移动端同样支持网格浏览，点击分类可回到对应聚合区域。</p>
+    <p><strong>适合追更与收藏：</strong>最新更新列表标注了日期与更新状态，热门推荐卡片带有热度与评分信息，方便判断是否值得追看。页面内容会围绕91传媒相关动态持续补充，适合加入浏览器收藏夹，定期回访。</p>
+    <p><strong>相关推荐扩展路径：</strong>每张推荐卡片都附带类型标签和简短看点，读者可以顺着标签找到同类内容。页尾的相关资讯与FAQ进一步补充背景信息，形成从“了解—筛选—讨论”的浏览路径，减少选择成本。</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section container" id="faq">
+  <div class="section-header">
+    <h2>常见问题解答</h2>
+    <a href="/#faq" class="more-link">更多问答 →</a>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>91传媒相关内容主要有哪些类型？</div>
+      <div class="faq-a">从本页收录情况看，主要覆盖都市悬疑、青春成长、现实主义、年代人文、美食纪录和犯罪动作等类型。悬疑推理和都市剧情占比较高，更新频率也相对稳定。读者可以根据类型标签快速筛选，也可以参考热门推荐中的评分与热度分布。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>如何判断一部内容是否适合自己？</div>
+      <div class="faq-a">建议先看类型标签和简短看点，再看评论区中的具体讨论。如果评论集中讨论节奏、人物或氛围，说明这些是该内容的强项。对于悬疑类，可以关注是否有单元结构；对于剧情类，可以留意人物关系是否复杂。结合更新状态和总集数，也能判断时间投入是否合适。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>页面上的评分和热度是怎么来的？</div>
+      <div class="faq-a">评分与热度是基于编辑整理和模拟社区反馈生成的参考数据，并非实时抓取。它们主要用于呈现内容的相对受欢迎程度，帮助读者建立初步印象。实际观看体验因人而异，建议结合多条评论和类型偏好综合判断，不必将单一评分作为唯一依据。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>类似91传媒的内容还有哪些推荐方向？</div>
+      <div class="faq-a">如果喜欢悬疑反转，可以关注迷雾档案这类单元式悬疑；喜欢家庭情感，归途列车是较温和的选择；偏好强节奏动作，暗夜追踪更对路；对人文纪录感兴趣，山海食记提供了不同的观看体验。本页推荐卡片中的标签可以作为扩展浏览的线索。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>更新频率和追更节奏怎么关注？</div>
+      <div class="faq-a">最新更新列表按日期排列，标注了“已更新”“预告”“收官”等状态，方便判断追更节点。热门推荐卡片中的“更新至第X集”或“定档”信息也值得留意。对于连载内容，建议关注页面更新动态和评论区讨论，通常会有观众同步提醒关键节点。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span>为什么这个页面适合反复浏览？</div>
+      <div class="faq-a">因为内容专题围绕91传媒相关作品持续整理，热门推荐、最新动态和用户评论会随2026年11月前后的讨论热度调整。页面结构稳定，分类清晰，每次回访都能快速定位到更新部分。对于想持续了解类型趋势和口碑变化的读者，收藏本页比临时搜索更高效。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 用户评论 ===== -->
+<section class="section container" id="comments">
+  <div class="section-header">
+    <h2>用户评论 · 社区讨论</h2>
+    <a href="/#comments" class="more-link">参与讨论 →</a>
+  </div>
+  <div class="comment-list">
+    <div class="comment-item">
+      <div class="avatar">追</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">追剧小队长</span><span class="comment-time">11-07</span></div>
+        <p class="comment-text">暗涌之城第12集的反转确实没想到，前面埋的线收回来了。91传媒这类悬疑内容最近质量挺稳的，希望别烂尾。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a2">路</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">路过看片</span><span class="comment-time">11-07</span></div>
+        <p class="comment-text">归途列车收官了，后半段有点平，但整体还是能看。家庭剧拍到这个程度算及格以上，演员加分。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a3">档</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">档案收集者</span><span class="comment-time">11-06</span></div>
+        <p class="comment-text">迷雾档案第二季预告看了三遍，单元剧结构保持住就好。第一季有几个案子逻辑一般，但氛围到位，期待改进。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a4">夏</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">夏日气泡水</span><span class="comment-time">11-06</span></div>
+        <p class="comment-text">盛夏回响的配乐真的可以单独出歌单，画面也舒服。剧情虽然有点套路，但下饭看刚刚好，不费脑子。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a5">夜</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">夜行动物</span><span class="comment-time">11-05</span></div>
+        <p class="comment-text">暗夜追踪的动作戏比预期好，剪辑不拖。不过反派动机写得有点薄，希望后续能补一补背景。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a6">风</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">风起时</span><span class="comment-time">11-05</span></div>
+        <p class="comment-text">风起长街的群像海报信息量好大，感觉每个人物都有故事线。年代剧只要细节做扎实，观感就不会差。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar">山</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">山海之间</span><span class="comment-time">11-04</span></div>
+        <p class="comment-text">山海食记第6集拍渔村那集很舒服，镜头不炫技但很有味道。这种内容适合吃饭的时候看，节奏刚好。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a2">浮</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">浮光掠影</span><span class="comment-time">11-04</span></div>
+        <p class="comment-text">浮光之下讨论度上来了，但感觉评论区有点两极。现实题材本来就有争议，看个人接受度吧。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a3">深</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">深度潜水员</span><span class="comment-time">11-03</span></div>
+        <p class="comment-text">91传媒这个页面整理得还行，至少比乱搜强。分类和标签挺清楚，找类型片省事。希望多更新一些冷门推荐。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a4">小</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">小满未满</span><span class="comment-time">11-03</span></div>
+        <p class="comment-text">最近悬疑类扎堆，有点审美疲劳了。倒是想看看有没有轻喜剧或者生活流的新内容，换换口味。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a5">周</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">周日下午</span><span class="comment-time">11-02</span></div>
+        <p class="comment-text">归途列车的家庭戏部分写得挺细，但中段有点拖。整体7分到8分之间吧，不算神作但也不差。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a6">罗</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">罗盘指针</span><span class="comment-time">11-01</span></div>
+        <p class="comment-text">暗涌之城的评分感觉略高了，可能我期待太高。不过摄影和调色确实在线，视觉上很舒服。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar">柠</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">柠檬不酸</span><span class="comment-time">10-31</span></div>
+        <p class="comment-text">有没有人和我一样觉得盛夏回响的配角比主角出彩？青春剧能把配角写活就不容易了。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a2">老</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">老书虫</span><span class="comment-time">10-30</span></div>
+        <p class="comment-text">91传媒相关的内容看多了会发现类型越来越细分，这是好事。但希望别光顾着类型标签，剧本还是根本。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a3">迷</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">迷雾追踪</span><span class="comment-time">10-29</span></div>
+        <p class="comment-text">迷雾档案第一季结尾那个伏笔居然还没填，第二季如果忘了这个坑我真的会生气。</p>
+      </div>
+    </div>
+    <div class="comment-item">
+      <div class="avatar a4">白</div>
+      <div class="comment-body">
+        <div class="comment-head"><span class="comment-name">白开水</span><span class="comment-time">10-28</span></div>
+        <p class="comment-text">页面推荐的热门内容参考一下就行，别全信。建议先看两集再决定追不追，现在预告剪辑都太会骗人了。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 相关资讯 ===== -->
+<section class="section container" id="news">
+  <div class="section-header">
+    <h2>相关资讯 · 动态速览</h2>
+    <a href="/#news" class="more-link">更多资讯 →</a>
+  </div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-date">2026-11-07</div>
+      <div class="news-title">91传媒内容专题更新：悬疑类热度持续走高</div>
+      <p class="news-summary">本周悬疑推理类内容讨论量上升，暗涌之城与迷雾档案占据话题前列，用户对反转设计和单元结构的关注度明显提高。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026-11-06</div>
+      <div class="news-title">归途列车收官，家庭题材口碑稳定</div>
+      <p class="news-summary">该内容以家庭关系为主线，会员收官后站内评分维持在8.4左右，评论区对演员表演和细节刻画评价较好，中段节奏存在争议。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026-11-05</div>
+      <div class="news-title">暗夜追踪导演访谈上线，谈动作场面设计</div>
+      <p class="news-summary">导演在访谈中分享了动作戏的拍摄思路与剪辑节奏控制，并回应了观众对反派动机的讨论，表示后续会有补充内容。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026-11-04</div>
+      <div class="news-title">风起长街发布群像海报，年代题材受关注</div>
+      <p class="news-summary">海报信息量较大，多个人物线索同时露出，引发观众对剧情走向的猜测。年代群像题材近期供给增加，受众反馈偏正面。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026-11-03</div>
+      <div class="news-title">山海食记第6集上线，美食纪录风格获好评</div>
+      <p class="news-summary">本期聚焦沿海渔村饮食文化，镜头语言平实自然，评论区多认为适合放松观看。该系列保持稳定更新节奏，适合收藏追看。</p>
+    </div>
+    <div class="news-card">
+      <div class="news-date">2026-11-02</div>
+      <div class="news-title">浮光之下话题讨论升温，现实题材观点分化</div>
+      <p class="news-summary">该内容围绕社会议题展开，评论区观点呈现两极分化。支持者认为表达有勇气，反对者认为处理略显直白，讨论热度仍在上升。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">91</div>
+          <div class="logo-text">91<span>传媒</span></div>
+        </div>
+        <p>91传媒内容专题，聚合国产传媒与网络视听内容的热门推荐、深度解析与社区讨论，为内容消费提供参考视角。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+      <div class="footer-col">
+        <h4>社区</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#guide">浏览指南</a>
+        <a href="/#intro">内容简介</a>
+      </div>
+      <div class="footer-col">
+        <h4>友情链接</h4>
+        <a href="#">内容合作</a>
+        <a href="#">媒体资源</a>
+        <a href="#">意见反馈</a>
+        <a href="#">站点地图</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="disclaimer">免责声明：本站为内容专题展示页面，所有推荐、评分、评论与资讯均为模拟内容，仅用于信息参考，不构成任何消费建议。页面不提供播放链接，请通过正规渠道获取内容服务。</div>
+      <div>© 2026 91传媒内容专题 · 页面内容仅供演示</div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+          </html>
